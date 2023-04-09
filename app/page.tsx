@@ -1,6 +1,7 @@
+import { Bars3Icon } from "@heroicons/react/24/solid";
+import Link from "next/link";
+
 function page() {
-  return (
-    <div>page</div>
-  )
+  return <>HomePage</>;
 }
-export default page
+export default page;
