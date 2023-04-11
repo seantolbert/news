@@ -1,6 +1,8 @@
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
+import SearchBox from "./SearchBox";
+import DarkModeButton from "./DarkModeButton";
 
 function Header() {
   return (
@@ -17,9 +19,8 @@ function Header() {
         </Link>
 
         <div className="flex items-center justify-end space-x-2">
-          {/*  */}
-          {/* dark mode button */}
-          {/*  */}
+          
+          <DarkModeButton />
 
           <button className="hidden md:inline lowercase tracking-widest text-gray-400 px-4 py-3 shadow-[13px_13px_26px_#c7c7c7,-13px_-13px_26px_#ffffff] bg-white rounded-xl lg:px-8 focus:shadow-none transition-shadow duration-200 ease-in-out">
             Subscribe Now
@@ -27,8 +28,9 @@ function Header() {
         </div>
       </div>
 
-      {/* NavLinks */}
       <NavLinks />
+
+      <SearchBox />
     </header>
   );
 }
