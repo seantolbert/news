@@ -10,7 +10,11 @@
 
 @layer components {
   .navlink {
-    @apply hover:underline decoration-gray-300 text-center decoration-2 active:underline underline-offset-8 rounded-full p-4 cursor-pointer hover:font-bold capitalize hover:scale-110 transition-all duration-200 ease-out ;
+    @apply hover:underline decoration-gray-300 text-center decoration-2 active:underline underline-offset-8 rounded-full p-4 cursor-pointer hover:font-bold capitalize hover:scale-110 transition-all duration-200 ease-out;
+  }
+
+  .headerTitle {
+    @apply text-4xl font-serif capitalize px-10 pt-5 underline decoration-gray-400 decoration-2 underline-offset-4 decoration-double;
   }
 }
 
